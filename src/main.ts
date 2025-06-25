@@ -119,6 +119,7 @@ function displayItemDetails(caca: Book | Movie | Album) {
    };
 }
 
+
 // Exercice 5 : Boucle sur Tous les Éléments
 // ========================================================================
 // Objectif : Utiliser la fonction "displayItemDetails" avec tous les tableaux.
