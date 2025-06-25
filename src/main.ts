@@ -7,38 +7,38 @@ export {};
 const Data = {
   books: [
     {
-      title: "The Hobbit",
-      author: "J.R.R. Tolkien",
-      year: 1937,
+      titre: "The Hobbit",
+      auteurr: "J.R.R. Tolkien",
+      nbrepages: 1937,
     },
     {
       title: "1984",
-      author: "George Orwell",
-      year: 1949,
+      auteur: "George Orwell",
+      nbrepages: 1949,
     },
   ],
   movies: [
     {
       title: "Inception",
-      director: "Christopher Nolan",
-      year: 2010,
+      realisateur: "Christopher Nolan",
+      datesortie: 2010,
     },
     {
       title: "Parasite",
-      director: "Bong Joon-ho",
-      year: 2019,
+      realisateur: "Bong Joon-ho",
+      datesortie: 2019,
     },
   ],
   albums: [
     {
-      title: "Thriller",
-      artist: "Michael Jackson",
-      year: 1982,
+      titre: "Thriller",
+      artiste: "Michael Jackson",
+      nbrchansons: 17,
     },
     {
-      title: "Back in Black",
-      artist: "AC/DC",
-      year: 1980,
+      titre: "Back in Black",
+      artiste: "AC/DC",
+      nbrchansons: 19,
     },
   ],
 };
@@ -81,7 +81,7 @@ interface Movie {
 
 interface Album {
     titre: string ;
-    auteur: string ;
+    artiste: string ;
     nbrchansons: number ;
 }
 
@@ -115,7 +115,7 @@ function displayItemDetails(caca: Book | Movie | Album) {
      console.log(`${caca.titre}, est un film realisé par ${caca.realisateur} en ${caca.datesortie}`)
    };
    if ("nbrechansons" in caca) {
-     console.log(`${caca.titre}, est un album composé par ${caca.auteur} et a  ${caca.nbrchansons}`)
+     console.log(`${caca.titre}, est un album composé par ${caca.artiste} et a  ${caca.nbrchansons}`)
    };
 }
 
