@@ -109,13 +109,13 @@ interface Mediadata {
 
 function displayItemDetails(caca: Book | Movie | Album) {
    if ("nbrepages" in caca) {
-     console.log(`${caca.titre}, est un livre ecrit par ${caca.auteur} et a ${caca.nbrepages}) ;
+     console.log(`${caca.titre}, est un livre ecrit par ${caca.auteur} et a ${caca.nbrepages}`) ;
    };
    if ("realisateur" in caca) {
-     console.log("${caca.titre}, est un film realisé par ${caca.realisateur} en ${caca.datesortie}")
+     console.log(`${caca.titre}, est un film realisé par ${caca.realisateur} en ${caca.datesortie}`)
    };
    if ("nbrechansons" in caca) {
-     console.log("${caca.titre}, est un album composé par ${caca.auteur} et a  ${caca.nbrchansons}")
+     console.log(`${caca.titre}, est un album composé par ${caca.auteur} et a  ${caca.nbrchansons}`)
    };
 }
 
